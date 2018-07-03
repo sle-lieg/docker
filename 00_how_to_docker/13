@@ -1,0 +1,2 @@
+docker container inspect -f '{{split .Config.Env ","}}' spawning-pool
+docker container inspect spawning-pool | grep -A8 Env
